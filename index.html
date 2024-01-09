@@ -6,9 +6,9 @@
     <title>IhrWebErfolg | Websiten Design Agentur</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Silicon - Multipurpose Technology Bootstrap Template">
+    <meta name="description" content="IhrWebErfolg - Ihre Digitale Websites Agentur">
     <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
-    <meta name="author" content="Createx Studio">
+    <meta name="author" content="IhrWebErfolg">
 
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -197,23 +197,24 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item dropdown">
-                                <a href="#ourProjects" class="nav-link dropdown-toggle"  >Referenzen</a>
+                                <a href="#ourProjects" class="nav-link dropdown-toggle bar-link"  >Referenzen</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a href="#steps" class="nav-link dropdown-toggle" >So funktioniert's</a>
+                            <li class="nav-item  dropdown">
+                                <a href="#steps" class="nav-link dropdown-toggle bar-link" >So funktioniert's</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a href="#opinion" class="nav-link dropdown-toggle" >Meinung der Kunden</a>  
+                            <li class="nav-item  dropdown">
+                                <a href="#opinion" class="nav-link dropdown-toggle bar-link" >Meinung der Kunden</a>  
                             </li>
-                            <li class="nav-item">
-                                <a href="#offers" class="nav-link">Angebot </a>
+                            <li class="nav-item ">
+                                <a href="#offers" class="nav-link bar-link">Angebot </a>
                             </li>
                         </ul>
                     </div>
                     <div class="offcanvas-header border-top">
-                        <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary w-100" target="_blank" rel="noopener">
-                <i class="bx bx-cart fs-4 lh-1 me-1"></i>
-                &nbsp;Buy now
+                        <a href="
+                    tel:+491633427444" class="btn btn-primary w-100" target="_blank" rel="noopener">
+                <i class="bx bx-phone fs-4 lh-1 me-1"></i>
+                &nbsp;Kontakt
               </a>
                     </div>
                 </div>
@@ -252,7 +253,7 @@
                                 Wir <span class="text-gradient-primary">setzen</span> Ihre Ideen in die Realität <span class="text-gradient-primary">um</span>
                             </h1>
                             <div class="d-md-flex align-items-md-start">
-                                <a href="contacts-v1.html" class="btn btn-lg btn-primary flex-shrink-0 me-md-4 mb-md-0 mb-sm-4 mb-3">Mit uns arbeiten</a>
+                                <a href="#offers" class="btn btn-lg btn-primary flex-shrink-0 me-md-4 mb-md-0 mb-sm-4 mb-3">Mit uns arbeiten</a>
                                 <p class="d-lg-block d-none mb-0 ps-md-3">IhrWebErfolg ist eine kreative Agentur, die darauf spezialisiert ist, maßgeschneiderte Websites zu entwickeln, die nicht nur ästhetisch ansprechend sind, sondern auch  effektive Benutzererfahrung bieten.</p>
                             </div>
                         </div>
@@ -404,7 +405,7 @@
             </div>
 
             <div class="pt-md-3 pt-2 text-center">
-                <a href="portfolio-grid.html" class="btn btn-lg btn-primary w-sm-auto w-100">Ich möchte auch so eine Website haben</a>
+                <a href="tel:+491633427444" class="btn btn-lg btn-primary w-sm-auto w-100">Ich möchte auch so eine Website haben</a>
             </div>
             <span id="steps"></span>
         </section>
@@ -937,7 +938,7 @@
                             <h3 class="h4 fw-normal text-light opacity-75">Haben wir Ihre Aufmerkasamkeit erregt ? Dann schreiben Sie uns</h3>
                             <a href="mailto:petrovvvvic@gmail.com" class=" text-light display-6">petrovvvvic@gmail.com</a>
                             <div class="pt-md-5 pt-4 pb-md-2">
-                                <a href="" class="btn btn-lg btn-light">Kontaktieren Sie uns</a>
+                                <a href="mailto:petrovvvvic@gmail.com" class="btn btn-lg btn-light">Kontaktieren Sie uns</a>
                             </div>
                         </div>
                     </div>
@@ -1033,6 +1034,23 @@
 
     <!-- Main Theme Script -->
     <script src="assets/js/theme.min.js"></script>
+    <script>
+        const mediaQuery = window.matchMedia('(max-width: 992px)')
+        const NAVBAR = document.getElementById('navbarNav');
+        if(mediaQuery.matches){
+            
+            const LINKS = document.querySelectorAll(".bar-link");
+            
+            LINKS.forEach((element)=> element.addEventListener("click", function toggleNav(){
+                NAVBAR.classList.toggle('show')
+                const FADE = document.querySelector('.fade');
+                FADE.classList.toggle('show')
+                console.log('hi')
+            }));
+        }
+        // NAVBAR.style.display('none')
+        
+    </script>
 </body>
 
 </html>

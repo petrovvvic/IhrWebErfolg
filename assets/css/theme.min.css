@@ -773,7 +773,11 @@ progress {
         font-size: 3.5rem
     }
 }
-
+@media(max-width: 500px) {
+    .display-6 {
+        font-size: calc(1.28275rem + 1.65vw) !important
+    }
+}
 .display-5 {
     font-size: calc(1.425rem + 2.1vw);
     font-weight: 800;
